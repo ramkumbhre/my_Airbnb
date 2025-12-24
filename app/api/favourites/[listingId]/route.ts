@@ -71,6 +71,9 @@
 // }
 
 
+export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
+
 import { NextResponse } from "next/server";
 import prisma from "@/app/libs/prismadb";
 import getCurrentUser from "@/app/actions/getCurrentUser";
@@ -82,7 +85,7 @@ interface IParams {
 export async function DELETE(
   request: Request,
   { params }: { params: IParams }
-): Promise<Response> {
+) {
   try {
     const currentUser = await getCurrentUser();
 
