@@ -2,7 +2,6 @@
   "name": "airbnb_proj",
   "version": "0.1.0",
   "private": true,
-  
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -49,8 +48,7 @@
     "tailwindcss": "^3.3.2",
     "typescript": "^5.9.3"
   },
-  "overrides": {
-  "world-countries": "4.0.0"
+  "resolutions": {
+  "typescript": "5.9.3"
 }
-  
 }
